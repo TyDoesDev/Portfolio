@@ -1,0 +1,28 @@
+{
+    "root": true,
+    "env": { 
+        "node": true 
+    },
+    "extends": [
+        "plugin:vue/vue3-essential",
+        "plugin:vue/vue3-recommended",
+        "eslint:recommended",
+        "prettier"
+    ],
+    "globals": {
+        "_": true
+    },
+    "parserOptions": {
+        "parser": "babel-eslint",
+        "requireConfigFile": false
+    },
+    "rules": {
+        "vue/component-name-in-template-casing": ["error", "PascalCase"],
+        "vue/singleline-html-element-content-newline": "off",
+        "vue/require-prop-types": "off",
+        "vue/require-default-prop": "off",
+        "vue/html-indent": ["error", 4],
+        "vue/no-unused-vars": "error"
+
+    }
+}
